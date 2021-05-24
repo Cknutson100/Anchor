@@ -89,12 +89,26 @@ a {
 }
 label {
     position: absolute;
-    transform: translate(0.25rem, -1.5rem);
+    transform: translate(0.25rem, -1.75rem);
     cursor: text;
+    transition: 0.3s ease;
 }
-.username.active {
-    transition: 0.3 ease;
-    transform: translateY(-10px);
+
+.username-label.active {
+    color: white;
+    opacity: 0.5;
+    transform: translate(0, -3.00rem);
+    transition: 0.3s ease;
+    font-size: 14px;
+
+}
+.password-label.active {
+    color: white;
+    opacity: 0.5;
+    transform: translate(0, -3.00rem);
+    transition: 0.3s ease;
+    font-size: 14px;
+
 }
 
 .username::placeholder, .password::placeholder {
@@ -120,4 +134,21 @@ margin-top: 45px;
     outline: none;
     height: 30px;
     font-size: 16px;
+    cursor: pointer;
+}
+
+.join {
+    display: block;
+    margin: 200px auto 5px;
+    text-align: center;
+}
+.sign-up {
+    display: block;
+    margin: 8px auto 8px ;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    cursor: pointer;
 }
